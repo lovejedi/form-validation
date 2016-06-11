@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+
+<body>
+    <!-- all fields except for address is reqired -->
+    <form id="signup">
+        <div class="error"></div>
+        <!-- min 1 / max 100 char / alpha only & space -->
+        <div>
+            <div class="error"></div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="name" req="true" />
+        </div>
+        <!-- not reqired, but must be alpha numeric -->
+        <div>
+            <div class="error"></div>
+            <label for="address1">Address 1</label>
+            <input id="address1" type="text" placeholder="address1" req="false" />
+        </div>
+        <div>
+            <!-- not reqired -->
+            <div class="error"></div>
+            <label for="address2">Address 2</label>
+            <input id="address2" type="text" placeholder="address2" req="false" />
+        </div>
+        <div>
+            <div class="error"></div>
+            <label for="state">State</label>
+            <select id="state">
+                    <option value="AZ">AZ</option>
+                    <option value="CA">CA</option>
+                </select>
+        </div>
+        <!-- min 5 / max 5 char / numeric -->
+        <div>
+            <div class="error"></div>
+            <label for="zip">Zip</label>
+            <input id="zip" type="text" placeholder="zip" req="true" />
+        </div>
+
+        <button id="save" type="submit">Save</button>
+        <button class="clear">Clear</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="form.js"></script>
+</body>
+
+</html>
