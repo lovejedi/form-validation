@@ -3,8 +3,7 @@ var formValidation = {
 		$("#save").on("click", this.isRequired);
 	},
 	isRequired:function(e){
-		alert("this field is required!");
-		e.preventDefault();
+		//e.preventDefault();
 		var form = event.target, 
 		input = $("input", form);
 		console.log(input);
